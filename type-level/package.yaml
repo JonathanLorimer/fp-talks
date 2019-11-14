@@ -1,0 +1,15 @@
+name:                type-level
+version:             0.1.0.0
+github:              "jonathanlorimer/type-level"
+license:             BSD3
+author:              "Jonathan Lorimer"
+maintainer:          "jonathan_lorimer@mac.com"
+copyright:           "2019 Jonathan Lorimer"
+
+description:         Please see the README on GitHub at <https://github.com/jonathanlorimer/type-level#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
