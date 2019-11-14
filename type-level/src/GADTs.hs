@@ -12,18 +12,9 @@ data Vec :: Type -> Type -> Type where
 deriving instance (Show a) => Show (Vec n a)
 
 
-hd :: Vec (Succ n) a -> a
-hd (x :* _) = x
-hd Nil = undefined -- This will give a type error/warning
+-- hd :: Vec (Succ n) a -> a
 
-vmap :: (a -> b) -> Vec n a -> Vec n b
--- vmap Nil = undefined :* Nil | this will not typecheck!
-vmap _ Nil = Nil
-vmap f (x :* xs) = f x :* vmap f xs
+-- vmap :: (a -> b) -> Vec n a -> Vec n b
 
--- | We still have a problem
--- | Nothing prevents this nonsense
-
-strange :: Vec Char Int -> Vec (Succ Char) Int
-strange = undefined
+-- strange :: Vec Char Int -> Vec (Succ Char) Int
 
